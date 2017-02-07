@@ -1,8 +1,12 @@
 <resources>
-    <string name="app_name">gestionDay</string>
+    <string name="app_name">Gestion Day</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">Configuración</string>
+
+    <!--String de activity_main.xml-->
+    <string name="bienvenida1">Bienvenido a Gestion Day.</string>
+    <string name="bienvenida2">Cuida de los pequeños gastos, un pequeño agujero hunde un barco.</string>
 </resources>
