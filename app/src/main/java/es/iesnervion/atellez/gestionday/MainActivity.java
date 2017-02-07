@@ -1,5 +1,6 @@
 package es.iesnervion.atellez.gestionday;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -72,19 +73,19 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-/*        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
-        }*/
+          if (id == R.id.nav_add) {
+              /*Intent a = new Intent(this, activity_agregar.class);
+              startActivity(a);*/
+            } else if (id == R.id.nav_resume) {
+              /*Intent b = new Intent(this, activity_resumen.class);
+              startActivity(b);*/
+            } else if (id == R.id.nav_graphic) {
+              /*Intent c = new Intent(this, activity_grapico.class);
+              startActivity(c);*/
+            } else if (id == R.id.nav_about) {
+              /*Intent d = new Intent(this, activity_about.class);
+              startActivity(d);*/
+            }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

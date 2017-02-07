@@ -21,6 +21,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:text="Gestion Day"
+        android:textSize="22dp"
         android:layout_marginLeft="15dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 

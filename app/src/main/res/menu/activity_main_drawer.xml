@@ -7,7 +7,7 @@
             android:icon="@drawable/ic_menu_add"
             android:title="Agregar"/>
         <item
-            android:id="@+id/nav_reume"
+            android:id="@+id/nav_resume"
             android:icon="@drawable/ic_menu_resume"
             android:title="Resumen"/>
         <item
