@@ -15,6 +15,6 @@
 
 
     <!--String del fragment_agregar.xml-->
-    <string name="lblAnotacion">Anotación:</string>
+    <string name="lblAnotacion">Cantidad:</string>
     <string name="lblNota">Nota:</string>
 </resources>
