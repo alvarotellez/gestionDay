@@ -1,10 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="30dp"
+        android:id="@+id/lblGasto"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Hola desde agregar"/>
-</LinearLayout>
+        android:layout_height="wrap_content"
+        android:hint="@string/lblAnotacion"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentStart="true"
+        >
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/anotacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:textSize="24dp"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <ToggleButton
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnGasto"
+        android:textOn="Ingreso"
+        android:textOff="Gasto"
+        android:layout_below="@+id/lblGasto"
+        android:layout_alignParentStart="true"
+        android:textSize="25dp"
+        android:background="#ffccbc"/>
+
+
+    <Spinner
+        android:id="@+id/spTipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/lblNota"
+        android:layout_below="@+id/spTipo"
+        android:layout_alignStart="@+id/spTipo"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="15dp"
+        android:layout_margin="15dp">
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textSize="24dp"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnCancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancelar"
+        android:textSize="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/btnGasto"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="25dp"
+        android:background="#f44336"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:textSize="20dp"
+        android:layout_alignBaseline="@+id/btnCancelar"
+        android:layout_alignBottom="@+id/btnCancelar"
+        android:layout_alignStart="@+id/btnGasto"
+        android:layout_marginLeft="25dp"
+        android:background="#4caf50"
+        android:padding="10dp"/>
+
+
+</RelativeLayout>

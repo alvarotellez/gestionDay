@@ -11,4 +11,10 @@
     <string name="bienvenida2">Cuida de los pequeños gastos, un pequeño agujero hunde un barco.</string>
     <string name="txtContacto">Aplicación desarrollada en la asignatura de Programación Móviles en el Ciclo de Desarrollo de Aplicaciones Multiplataforma para el Curso 2016/17</string>
     <string name="txtCopy">© Álvaro Téllez Hidalgo - 2017</string>
+
+
+
+    <!--String del fragment_agregar.xml-->
+    <string name="lblAnotacion">Anotación:</string>
+    <string name="lblNota">Nota:</string>
 </resources>
