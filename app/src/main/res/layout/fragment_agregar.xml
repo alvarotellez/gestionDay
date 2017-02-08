@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <android.support.design.widget.TextInputLayout
@@ -19,60 +20,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="numberDecimal"
-            android:textSize="24dp"/>
+            android:textSize="24dp"
+            />
     </android.support.design.widget.TextInputLayout>
 
-    <ToggleButton
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnGasto"
-        android:textOn="Ingreso"
-        android:textOff="Gasto"
-        android:layout_below="@+id/lblGasto"
-        android:layout_alignParentStart="true"
-        android:textSize="25dp"
-        android:background="#ffccbc"/>
 
-
-    <Spinner
-        android:id="@+id/spTipo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginRight="15dp"
-        android:layout_marginLeft="15dp"/>
-
-    <android.support.design.widget.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/lblNota"
-        android:layout_below="@+id/spTipo"
-        android:layout_alignStart="@+id/spTipo"
-        android:layout_marginTop="80dp"
-        android:layout_marginLeft="15dp"
-        android:layout_margin="15dp">
-        <android.support.design.widget.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="text"
-            android:textSize="24dp"/>
-    </android.support.design.widget.TextInputLayout>
-
-    <Button
-        android:id="@+id/btnCancelar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Cancelar"
-        android:textSize="20dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignEnd="@+id/btnGasto"
-        android:layout_marginBottom="30dp"
-        android:layout_marginRight="25dp"
-        android:background="#f44336"
-        android:padding="10dp"/>
 
     <Button
         android:id="@+id/btnGuardar"
@@ -82,10 +34,68 @@
         android:textSize="20dp"
         android:layout_alignBaseline="@+id/btnCancelar"
         android:layout_alignBottom="@+id/btnCancelar"
-        android:layout_alignStart="@+id/btnGasto"
-        android:layout_marginLeft="25dp"
-        android:background="#4caf50"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="60dp"
+        android:background="#4CAF50"
         android:padding="10dp"/>
+    <Button
+        android:id="@+id/btnCancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancelar"
+        android:textSize="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="60dp"
+        android:background="#B71C1C"
+        android:padding="10dp"
+        />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/lblNota"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/swGI"
+        android:layout_marginTop="28dp">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/txtNota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textSize="24dp"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/spinnerTip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblGasto"
+        android:layout_alignEnd="@+id/btnCancelar"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        />
+    <!--   libreria para el toggle button
+    https://android-arsenal.com/details/1/3235-->
+    <belka.us.androidtoggleswitch.widgets.ToggleSwitch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        custom:textToggleLeft="Gasto"
+        custom:textToggleRight="Ingreso"
+        custom:inactiveTextColor="#9E9E9E"
+        custom:inactiveBgColor="#757575"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        custom:activeBgColor="#FF7043"
+        android:id="@+id/swGI"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        custom:toggleWidth="160dp"/>
+
 
 
 </RelativeLayout>
