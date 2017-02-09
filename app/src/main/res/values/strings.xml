@@ -15,6 +15,10 @@
 
 
     <!--String del fragment_agregar.xml-->
-    <string name="lblAnotacion">Cantidad:</string>
+    <string name="lblCantidad">Cantidad:</string>
     <string name="lblNota">Nota:</string>
+    <string name="lblGasto">Gasto</string>
+    <string name="lblIngreso">Ingreso</string>
+    <string name="lblAceptar">Aceptar</string>
+    <string name="lblCancelar">Cancelar</string>
 </resources>
