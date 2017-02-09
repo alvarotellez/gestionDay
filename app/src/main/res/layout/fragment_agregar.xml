@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!--EditText de la cantidad-->
     <android.support.design.widget.TextInputLayout
         android:layout_marginTop="30dp"
         android:id="@+id/lblCantidad"
@@ -21,7 +22,7 @@
             android:inputType="numberDecimal" />
     </android.support.design.widget.TextInputLayout>
 
-
+    <!--EditText de la nota-->
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -39,7 +40,7 @@
             android:textSize="20sp"
             />
     </android.support.design.widget.TextInputLayout>
-
+    <!--Spinner con el tipo de gasto o ingreso que es-->
     <Spinner
         android:id="@+id/spinnerTipo"
         android:layout_width="match_parent"
@@ -49,7 +50,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginRight="15dp"
         />
-
+    <!--ToggleButton para saber si es un gasto o un ingreso-->
     <!--libreria para el toggle button
     https://android-arsenal.com/details/1/3235-->
     <belka.us.androidtoggleswitch.widgets.ToggleSwitch
@@ -67,6 +68,7 @@
         android:layout_marginStart="20dp"
         custom:toggleWidth="160dp"/>
 
+    <!--Boton aceptar, que nos enviara al fragment resumen-->
     <Button
         android:id="@+id/btnAceptar"
         android:layout_width="wrap_content"
@@ -79,7 +81,7 @@
         android:layout_marginTop="60dp"
         android:textColor="#FFFF"
         android:background="#43A047"/>
-
+    <!--Boton cancelar, que nos enviara al fragment inicio-->
     <Button
         android:id="@+id/btnCancelar"
         android:layout_width="wrap_content"
