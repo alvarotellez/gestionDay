@@ -30,6 +30,6 @@ dependencies {
 
     //Libreria toggle
     compile 'us.belka:androidtoggleswitch:1.2.1'
-    //Libreria calendario
+    //Libreria calendari
     compile 'pl.rspective.pagerdatepicker:pagerdatepicker:1.2.0'
 }
