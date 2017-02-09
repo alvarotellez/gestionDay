@@ -28,5 +28,8 @@ dependencies {
     compile 'com.android.support:design:24.2.0'
     testCompile 'junit:junit:4.12'
 
+    //Libreria toggle
     compile 'us.belka:androidtoggleswitch:1.2.1'
+    //Libreria calendario
+    compile 'pl.rspective.pagerdatepicker:pagerdatepicker:1.2.0'
 }

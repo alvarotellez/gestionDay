@@ -3,9 +3,16 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
+    <pl.rspective.pagerdatepicker.view.DateRecyclerView
+        android:id="@+id/date_list"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#ff343434"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Hola desde el resumen"/>
+        android:layout_below="@id/date_list"/>
 
 </LinearLayout>
