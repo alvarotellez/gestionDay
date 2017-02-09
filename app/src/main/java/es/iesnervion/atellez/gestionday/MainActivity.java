@@ -86,21 +86,13 @@ public class MainActivity extends AppCompatActivity
         }
 
 
-
         if (fragment != null) {
-
-
 
             FragmentTransaction transactionInicio = getFragmentManager().beginTransaction();
             transactionInicio.replace(R.id.content_main,fragment);
             transactionInicio.addToBackStack(null);
             getSupportActionBar().setTitle(titulo);
             transactionInicio.commit();
-            //getSupportFragmentManager().beginTransaction()
-            //        .replace(R.id.frame_container, fragment).commit();
-            //
-            // change icon to arrow drawable
-            //getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_arrow);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

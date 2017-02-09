@@ -29,8 +29,8 @@
         android:hint="@string/lblNota"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
-        android:layout_below="@+id/swGF"
-        android:layout_marginTop="28dp"
+        android:layout_below="@+id/swGI"
+        android:layout_marginTop="70dp"
         android:id="@+id/lblNota">
         <android.support.design.widget.TextInputEditText
             android:id="@+id/txtNota"
@@ -38,35 +38,27 @@
             android:layout_height="wrap_content"
             android:inputType="text"
             android:textSize="20sp"
+            android:height="200dp"
             />
     </android.support.design.widget.TextInputLayout>
-    <!--Spinner con el tipo de gasto o ingreso que es-->
-    <Spinner
-        android:id="@+id/spinnerTipo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/lblCantidad"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="15dp"
-        />
+
     <!--ToggleButton para saber si es un gasto o un ingreso-->
     <!--libreria para el toggle button
     https://android-arsenal.com/details/1/3235-->
     <belka.us.androidtoggleswitch.widgets.ToggleSwitch
-        android:id="@+id/swGF"
+        android:id="@+id/swGI"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         custom:textToggleLeft="@string/lblGasto"
         custom:textToggleRight="@string/lblIngreso"
         custom:inactiveTextColor="#9E9E9E"
         custom:inactiveBgColor="#757575"
-        android:textAlignment="center"
+        custom:toggleWidth="160dp"
         android:textSize="20sp"
         custom:activeBgColor="#FF7043"
-        android:layout_centerVertical="true"
+        android:layout_marginTop="180dp"
         android:layout_marginStart="20dp"
-        custom:toggleWidth="160dp"/>
+        />
 
     <!--Boton aceptar, que nos enviara al fragment resumen-->
     <Button
@@ -78,7 +70,7 @@
         android:layout_below="@+id/lblNota"
         android:layout_alignStart="@+id/lblNota"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="80dp"
         android:textColor="#FFFF"
         android:background="#43A047"/>
     <!--Boton cancelar, que nos enviara al fragment inicio-->
@@ -90,7 +82,7 @@
         android:padding="15dp"
         android:layout_alignBaseline="@+id/btnAceptar"
         android:layout_alignBottom="@+id/btnAceptar"
-        android:layout_alignEnd="@+id/swGF"
+        android:layout_alignEnd="@+id/swGI"
         android:layout_marginEnd="60dp"
         android:background="#EF5350"
         android:textColor="#FFFF"/>
