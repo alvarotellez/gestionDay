@@ -16,8 +16,12 @@ public class AgregarFragment extends Fragment{
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
+
+        //miSpinner = (Spinner) getActivity().findViewById(R.id.spinnerTipo);
+
         return inflater.inflate(R.layout.fragment_agregar, container, false);
 
     }
+
 
 }

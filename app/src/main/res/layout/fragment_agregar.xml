@@ -2,12 +2,11 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:custom="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:fbutton="http://schemas.android.com/tools">
+    android:layout_height="match_parent">
 
     <android.support.design.widget.TextInputLayout
         android:layout_marginTop="30dp"
-        android:id="@+id/lblGasto"
+        android:id="@+id/lblCantidad"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/lblAnotacion"
@@ -16,7 +15,7 @@
         android:layout_marginRight="15dp"
         android:layout_alignParentStart="true">
         <android.support.design.widget.TextInputEditText
-            android:id="@+id/anotacion"
+            android:id="@+id/txtCantidad"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="numberDecimal" />
@@ -31,7 +30,7 @@
         android:layout_marginRight="15dp"
         android:layout_below="@+id/swTipo"
         android:layout_marginTop="28dp"
-        android:id="@+id/textInputLayout">
+        android:id="@+id/lblNota">
         <android.support.design.widget.TextInputEditText
             android:id="@+id/txtNota"
             android:layout_width="match_parent"
@@ -42,10 +41,10 @@
     </android.support.design.widget.TextInputLayout>
 
     <Spinner
-        android:id="@+id/spinnerTip"
+        android:id="@+id/spinnerTipo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/lblGasto"
+        android:layout_below="@+id/lblCantidad"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="15dp"
@@ -73,8 +72,8 @@
         android:layout_height="wrap_content"
         android:text="Aceptar"
         android:padding="15dp"
-        android:layout_below="@+id/textInputLayout"
-        android:layout_alignStart="@+id/textInputLayout"
+        android:layout_below="@+id/lblNota"
+        android:layout_alignStart="@+id/lblNota"
         android:layout_marginStart="60dp"
         android:layout_marginTop="60dp"
         android:textColor="#FFFF"
