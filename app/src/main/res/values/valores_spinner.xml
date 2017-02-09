@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string-array name="spinner_tipo">
-        <item>Factura</item>
-        <item>Compra supermercado</item>
-        <item>Otros gastos</item>
-    </string-array>
-</resources>
