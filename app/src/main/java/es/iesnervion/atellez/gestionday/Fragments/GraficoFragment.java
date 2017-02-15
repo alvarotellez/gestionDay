@@ -17,4 +17,8 @@ public class GraficoFragment extends Fragment{
     {
         return inflater.inflate(R.layout.fragment_grafico, container, false);
     }
+    public void onStart(){
+        super.onStart();
+
+    }
 }

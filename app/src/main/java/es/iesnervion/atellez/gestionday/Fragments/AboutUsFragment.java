@@ -17,6 +17,9 @@ public class AboutUsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
         return inflater.inflate(R.layout.fragment_about, container, false);
+    }
+    public void onStart(){
+        super.onStart();
 
     }
 }
